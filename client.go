@@ -91,6 +91,10 @@ func (f frame) Bytes() []byte {
 	return []byte(f)
 }
 
+func (f frame) MsgpBytes() []byte {
+	return []byte(f)
+}
+
 func (c client) LookupAndPost(vAddr string,
 	body []byte, tags map[RequestTag]string) (<-chan Source, error) {
 

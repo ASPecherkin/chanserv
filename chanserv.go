@@ -14,6 +14,7 @@ import (
 type Frame interface {
 	// Bytes returns a byte representation of the payload.
 	Bytes() []byte
+	MsgpBytes() []byte
 }
 
 // MetaData for the source, usually is available on the client-side only,
